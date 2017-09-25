@@ -1,8 +1,9 @@
-package web;
+package web.selector;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.type.AnnotationMetadata;
+import web.EnableRandomPort;
 
 /** @author David Hsu */
 public class RandomPortSelector implements ImportSelector {
