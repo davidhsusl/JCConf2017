@@ -33,6 +33,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- boot-web -->
+        <dependency>
+            <groupId>jcconf2017</groupId>
+            <artifactId>boot-web</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- Other -->
         <dependency>
             <groupId>org.projectlombok</groupId>
