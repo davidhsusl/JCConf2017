@@ -20,8 +20,8 @@ public class RandomPortSelector implements ImportSelector {
             importingClassMetadata.getAnnotationAttributes(
                 EnableRandomPort.class.getName(), false));
 
-    minPort = Integer.parseInt(attributes.get(MIN_PORT).toString());
-    maxPort = Integer.parseInt(attributes.get(MAX_PORT).toString());
+    minPort = attributes.getNumber(MIN_PORT);
+    maxPort = attributes.getNumber(MAX_PORT);
 
     return new String[] {EmbeddedServletContainerConfiguration.class.getName()};
   }
