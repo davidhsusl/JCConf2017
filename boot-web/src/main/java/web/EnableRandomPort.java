@@ -1,6 +1,7 @@
 package web;
 
 import org.springframework.context.annotation.Import;
+import org.springframework.util.SocketUtils;
 import web.selector.RandomPortSelector;
 
 import java.lang.annotation.*;
@@ -12,7 +13,7 @@ import java.lang.annotation.*;
 @Documented
 public @interface EnableRandomPort {
 
-  int minPort() default 1;
+  int minPort() default SocketUtils.PORT_RANGE_MIN;
 
-  int maxPort() default 65535;
+  int maxPort() default SocketUtils.PORT_RANGE_MAX;
 }
