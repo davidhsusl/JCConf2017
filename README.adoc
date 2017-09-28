@@ -1,0 +1,21 @@
+= JCConf2017
+
+* Annotation Configuration: boot-web、random-port-sample
+
+    cd boot-web
+    mvn clean install -DskipTests
+
+    cd random-port-sample
+    mvn spring-boot:run
+
+* Starter Configuration: boot-starter-web、random-port-starter-sample
+** 啟動 Starter 的 Sample 前要先開 config-server
+
+    cd boot-starter-web
+    mvn clean install -DskipTests
+
+    cd config-server
+    mvn spring-boot:run
+
+    cd random-port-starter-sample
+    mvn spring-boot:run
